@@ -447,7 +447,9 @@ class NBAWinProbability:
 				# train
 				C = C_range[k]
 				clf = LogisticRegression(C=C)
-				valid_acc[k,fold] = self.__WP_error(self.xTest,self.yTest,clf)    
+				clf.fit(self.xTest,self.yTest)
+				prob = clf.predict_proba(self.xTest)
+				valid_acc[k,fold] = self.__WP_error(prob,self.yTest)       
 			fold += 1
 		# choose the p_th with minimal cost
 		best_C = C_range[np.argmin(np.mean(valid_acc,axis=1))]
@@ -459,7 +461,7 @@ class NBAWinProbability:
 		clf = LogisticRegression(C=C)
 		clf.fit(self.xTrain,self.yTrain)
 		print('Train score: ', clf.score(self.xTrain,self.yTrain))
-		error = self.__WP_error(self.xTrain,self.yTrain,clf)
+		error = self.__WP_error(clf.predict_proba(self.xTrain),self.yTrain)
 		print('WP error: ', error)
 		self.clf = clf
 		print('Model Fit Completed!')

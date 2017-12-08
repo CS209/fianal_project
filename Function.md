@@ -25,6 +25,7 @@ from sklearn.model_selection import KFold
 from scipy.interpolate import interp1d
 import statsmodels.api as sm
 
+# Plot Settings For all Notebooks Uniformity
 plt.rcParams['figure.facecolor']='w'
 plt.rcParams['axes.labelsize']=15
 plt.rcParams['xtick.labelsize']=15
@@ -469,7 +470,7 @@ class NBAWinProbability:
 		clf = LogisticRegression(C=C)
 		clf.fit(self.xTrain,self.yTrain)
 		print('Train score: ', clf.score(self.xTrain,self.yTrain))
-		error = self.__WP_error(self.xTrain,self.yTrain,clf)
+		error = self.__WP_error(clf.predict_proba(self.xTrain),self.yTrain)
 		print('WP error: ', error)
 		self.clf = clf
 		print('Model Fit Completed!')
@@ -624,6 +625,5 @@ class EDAImport:
 			plt.scatter(XX.iloc[k],YY.iloc[k], c=c1, alpha=0.5)
 		plt.xlabel(xLabel)
 		plt.ylabel(yLabel)
-
 ```
 
