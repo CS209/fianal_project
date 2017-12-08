@@ -1,8 +1,16 @@
+---
+title: Problem Statement
+notebook: index.ipynb
+nav_include: 1
+---
 
-# AC 209A Final Project - Sports Catergory NBA  Analysis
-## By: Bolei Deng and Matheus Fernandes - Group 1
+## Contents
+{:.no_toc}
+*  
+{: toc}
 
-# Problem Statement
+By: Bolei Deng and Matheus Fernandes - Group 1
+
 
 We established a model to predict the win probablity (WP) of a certain game at certain point based on the play-by-play data and team stats. Our prediction is then compared with true WP of the games with an error with in $\pm5$%. Based on the WP prediction model, we generated the WP curve with respect to time remaining for each game. Based on that, we evaluate players in the league by their ability to add WP to their teams. More specifically, we fit a linear regression model the on court players data with WP prediction. Then the coefficient of this model is extracted as an indication of players contribution to their teams WP factor.
 
