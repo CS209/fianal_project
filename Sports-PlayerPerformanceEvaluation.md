@@ -1,14 +1,22 @@
+---
+title: Player Performace Evaluation
+notebook: Sports-PlayerPerformanceEvaluation.ipynb
+nav_include: 5
+---
+
+## Contents
+{:.no_toc}
+*  
+{: toc}
 
 
 
 ```python
-# Let us import the main code function with all of it's libraries
 exec(open("Function.py").read())
 %matplotlib inline
 ```
 
 
-# Load Class Type and Load Exisiting Data
 Here we create an instance Model from the class. We are only interested in working with data for 2018. Therefore, we can pull up only the data for Season 2018. We then build the dataframe we will be working with by calling the BuildDF function.
 
 
@@ -24,7 +32,6 @@ Model.TrainTestSplit(train_fraction=0)
     Train-Test Split Completed!
 
 
-# Loading Large Trained Logisitic Regression Model
 Here we load the `.pkl` model for the 2012-17 seasons trained model. Note: we are not traning on 2018 and throught this part we are evaluating 2018 as a test perditction. All of the work we do here is assuming the model has never seen this data prior.
 
 
@@ -44,7 +51,6 @@ Model.DownloadPlayerOnCourtInfo()
     Dowloading On Court Player information Completed!
 
 
-# Evaluating Player's performace based on win probability
 The way we evaluate players perfomance is based on the model prediction for win probability. 
 
 ### 1. Downloading Players on Court Data

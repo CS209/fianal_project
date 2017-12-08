@@ -1,8 +1,17 @@
+---
+title: Win Probability Evaluation
+notebook: Sports-GameWinProbabilityEvaluation.ipynb
+nav_include: 4
+---
+
+## Contents
+{:.no_toc}
+*  
+{: toc}
 
 
 
 ```python
-# Let us import the main code function with all of it's libraries
 exec(open("Function.py").read())
 %matplotlib inline
 ```
@@ -12,7 +21,6 @@ exec(open("Function.py").read())
       from pandas.core import datetools
 
 
-# Win Probability Evaluation
 
 In this section, we use the data frame we've generated 
 

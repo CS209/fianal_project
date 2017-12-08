@@ -1,21 +1,28 @@
+---
+title: EDA
+notebook: Sports-EDA.ipynb
+nav_include: 3
+---
+
+## Contents
+{:.no_toc}
+*  
+{: toc}
 
 
 
 ```python
-# Let us import the main code function with all of it's libraries
 exec(open("Function.py").read())
 %matplotlib inline
 ```
 
 
-# Performing EDA on Play-by-play Data
 
 After performing scraping and exporting all of the data into a `.csv` file we can import the data back into this notebook to perform some analysis on the data. Here we are going to explain what the features are, and understand what feautures are important and how spearable the data really is.
 
 
 
 ```python
-# Let's import the data after appropriate parsing of the files
 EDA=EDAImport('Data/AllFeatures.csv')
 ```
 
