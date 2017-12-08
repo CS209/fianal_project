@@ -1,5 +1,5 @@
 ---
-title: Let us import the main code function with all of it's libraries
+title: Data Scraping and Model Training
 notebook: Sports-DataGenerationAndModelTraining.ipynb
 nav_include: 2
 ---

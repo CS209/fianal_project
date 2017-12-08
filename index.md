@@ -59,9 +59,3 @@ As mentioned previously, our project is subdivided into two parts: 1. predicting
 
 2. For the part predicting how valuable a player is, our results produces a list that is consistent to our expectations of what the most valuable players are. As you can see from our model results for this part, we predict some of the key players such as LeBron James, James Harden, Giannis Antetokounmpo, and Joel Embiid to be top contributors to increasing the WP of their teams when on court. This as you can imagine ic consistent to what popular belief is as they perform very well compared to their team-mates. However, a potential short-coming of our model is that this method only separate a good player from the rest when the rest of the team they are in lags compared to them. For instance, there are many good players in the Golden Sate Warriers that are not shown in this list, but are great none-the-less. This is a result of the fact that the team is in balance and thus will not show their good team-members as when they are in the court it does not add much to the WP. To mititgate this issue, we believe we need to futher incorporate the peformance of the entire team to this metric. In other words, we need to nomalize the current player performance metric by the overall team performance. 
 
-
-
-```python
-
-```
-
