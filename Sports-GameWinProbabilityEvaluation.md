@@ -131,9 +131,3 @@ Model.plot_WP_error()
 ![png](Sports-GameWinProbabilityEvaluation_files/Sports-GameWinProbabilityEvaluation_16_1.png)
 
 
-
-
-```python
-
-```
-
