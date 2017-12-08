@@ -5,12 +5,6 @@ nav_include: 6
 
 ---
 
-## Contents
-{:.no_toc}
-*  
-{: toc}
-
-
 
 ```python
 import pandas as pd
