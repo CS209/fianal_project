@@ -1,7 +1,7 @@
 theme: jekyll-theme-primer
 title: AC 209A Final Project - Sports NBA Analysis
 description: NBA Game Probability Prediction and Player Analysis
-baseurl:
+baseurl: cs209.fer.me
 markdown: kramdown
 kramdown:
     math_engine: mathjax
