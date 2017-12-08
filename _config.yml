@@ -1,6 +1,6 @@
 theme: jekyll-theme-primer
-title: Support Vector Olives
-description: Keeping Italian Olives Pure!
+title: AC 209A Final Project - Sports NBA Analysis
+description: NBA Game Probability Prediction and Player Analysis
 baseurl:
 markdown: kramdown
 kramdown:
